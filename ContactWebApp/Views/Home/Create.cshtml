@@ -1,15 +1,5 @@
 ﻿@model ContactWebApp.Models.ContactsViewModel
 
-<script type="text/javascript">
-    $(function()
-    {
-        $('#idbtn').click(function()
-        {
-            $('#idtxt').clone().attr('id', 'idtxt_' + $(this).index()).insertAfter('#idtxt');
-        })
-    })
-</script>
-
 <h2>Create:</h2>
 
 @using (Html.BeginForm("Create","Home", FormMethod.Post,new { id = "form",enctype="multipart/form-data"}))
