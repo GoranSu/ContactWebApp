@@ -61,3 +61,7 @@
 #*.PDF   diff=astextplain
 #*.rtf   diff=astextplain
 #*.RTF   diff=astextplain
+
+$ cat .gitattributes
+special-vendored-path/* linguist-vendored
+jquery.js linguist-vendored=false
